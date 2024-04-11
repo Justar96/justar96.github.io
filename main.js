@@ -3,6 +3,15 @@ const contact = document.querySelector('#contact')
 const aboutContent = document.querySelector('#about-content')
 const contactContent = document.querySelector('#contact-content')
 
+var btn = document.getElementById('btn')
+
+function leftClick() {
+    btn.style.left = '0'
+}
+function rightClick() {
+    btn.style.left = '50%'
+}
+
 about.addEventListener('click', () => {
     const aboutBox = new WinBox({
         title: 'About me',

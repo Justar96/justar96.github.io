@@ -14,17 +14,48 @@ body {
   color: #ccc;
   font-size: 18px;
   line-height: 1;
+  justify-content: center;
 }
+
+.button-box {
+  width: 160px;
+  margin: 120px auto;
+  position: relative;
+  border-radius: 12px;
+  background: #333;
+  text-align: center;
+}
+.toggle-btn {
+  font-family: "Roboto Mono";
+  font-weight: 450;
+  padding: 4px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  text-align: match-parent;
+}
+#btn {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #00aa00;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
 
 h1 {
   font-family: "Roboto Mono";
   font-weight: bold;
   text-shadow: 0 0 0.05em #00aa00;
-  margin-top: 50px;
+  margin-top: -10px;
   color: var(--text-color);
   font-size: 56px;
   letter-spacing: -1px;
-  margin-top: 0px;
   margin-bottom: 12px;
 }
 
@@ -188,7 +219,7 @@ nav ul li {
   to {
     color: transparent;
   }
-  45% {
+  50% {
     color: var(--text-color);
     text-shadow: 0 0 0.1em #00aa00;
   }
