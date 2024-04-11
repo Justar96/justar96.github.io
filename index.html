@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="noselect">
-      <div class="container">
+      <div class="container" id="1st-page">
         <nav>
           <ul>
             <li id="about">/about</li>
@@ -23,7 +23,7 @@
         <main>
           <h1>begetar:<span class="cursor">|</span></h1>
           <h5>@nalongkorn panti 1996</h5>
-          <h3>Find me online:</h3>
+          <h3 id="h3-1stpage">Find me online:</h3>
           <ul>
             <li>
               <a href="https://github.com/Justar96" target="_blank">github</a>
@@ -59,12 +59,21 @@
           <p id="new_win">E-mail : nalongkon1996@gmail.com</p>
         </div>
       </div>
+
+      <!-- 2nd page -->
+      <div class="container-toggle" id="2nd-page">
+        <main>
+          <div id="todaysDate"></div>
+          <h1 id="terminal">guest@begetar-terminal ~ % <span class="cursor_3">_</span></h1>
+        </main>
+      </div>
+    </div>
       <div class="button-box">
         <div id="btn"></div>
-        <button type="button" class="toggle-btn" onclick="leftClick()">
-          webpage
+        <button type="button" class="toggle-btn pageToggle" onclick="leftClick()">
+           webpage
         </button>
-        <button type="button" class="toggle-btn" onclick="rightClick()">
+        <button type="button" class="toggle-btn pageToggle" onclick="rightClick()">
           terminal
         </button>
       </div>

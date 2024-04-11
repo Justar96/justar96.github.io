@@ -6,11 +6,29 @@ const contactContent = document.querySelector('#contact-content')
 var btn = document.getElementById('btn')
 
 function leftClick() {
-    btn.style.left = '0'
-}
+    btn.style.left = '0';
+    var x = document.getElementById("1st-page");
+    var y = document.getElementById("2nd-page");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+        y.style.display = "none"
+      } else {
+        x.style.display = "flex";
+        y.style.display = "none"
+      }
+    }
 function rightClick() {
     btn.style.left = '50%'
-}
+    var x = document.getElementById("1st-page");
+    var y = document.getElementById("2nd-page");
+    if (y.style.display === "none") {
+        y.style.display = "flex";
+        x.style.display = "none";
+      } else {
+        y.style.display = "flex";
+        x.style.display = "none";
+      }
+    }
 
 about.addEventListener('click', () => {
     const aboutBox = new WinBox({
@@ -53,3 +71,27 @@ contact.addEventListener('click', () => {
         }
     })
 })
+
+function pageToggle() {
+    var x = document.getElementById("1st-page");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+function doDate()
+{
+    var str = "";
+
+    var days = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+    var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+    var now = new Date();
+
+    str += days[now.getDay()] + ", " + String(now.getDate()).padStart(2, "0") + " " + months[now.getMonth()] + " " + now.getFullYear() + " " + String(now.getHours()).padStart(2, "0") +":" + String(now.getMinutes()).padStart(2, "0") + ":" + String(now.getSeconds()).padStart(2, "0");
+    document.getElementById("todaysDate").innerHTML = str;
+}
+
+setInterval(doDate, 1000);
