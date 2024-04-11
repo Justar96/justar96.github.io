@@ -8,11 +8,6 @@
   --text-color: #00aa00;
 }
 
-@font-face {
-  font-family: terminusttf;
-  src: url(TerminusTTF-4.49.3.ttf);
-}
-
 body {
   font-family: "Roboto Mono";
   background-color: #292929;
@@ -149,8 +144,8 @@ h5 {
 
 #todaysDate {
   font-family: "Roboto Mono";
-  font-weight: 400;
-  text-shadow: 0 0 0.1em var(--text-color);
+  font-weight: 350;
+  text-shadow: 0 0 0.05em var(--text-color);
   color: var(--text-color);
   font-size: 16px;
   letter-spacing: 0px;
@@ -159,8 +154,8 @@ h5 {
 
 #terminal {
   font-family: "Roboto Mono";
-  font-weight: 400;
-  text-shadow: 0 0 0.1em var(--text-color);
+  font-weight: 350;
+  text-shadow: 0 0 0.05em var(--text-color);
   color: var(--text-color);
   font-size: 16px;
   letter-spacing: 0.1px;
@@ -256,6 +251,7 @@ main {
 }
 .cursor_3 {
   font-family: sans-serif;
+  color: var(--text-color);
   font-size: 22px;
   font-weight: 700;
   animation: 1s blink-2 step-end infinite;
