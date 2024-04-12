@@ -29,7 +29,7 @@ body {
 .toggle-btn {
   font-family: "Roboto Mono";
   font-weight: 450;
-  color: 0;
+  color: #030303;
   padding: 4px;
   cursor: pointer;
   background: transparent;

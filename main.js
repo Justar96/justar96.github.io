@@ -9,6 +9,8 @@ var toggleBtn = document.getElementById('toggle-btn')
 function leftClick() {
     btn.style.left = '0';
     // toggleBtn.style.color = '0';
+    var colorWhite = toggleBtn.style.color = '0'
+    var colorBlack = toggleBtn.style.color = '0'
     var x = document.getElementById("1st-page");
     var y = document.getElementById("2nd-page");
     if (x.style.display === "none") {
@@ -22,6 +24,8 @@ function leftClick() {
 function rightClick() {
     btn.style.left = '50%'
     // toggleBtn.style.color = '0';
+    var colorWhite = toggleBtn.style.color = '0'
+    var colorBlack = toggleBtn.style.color = '0'
     var x = document.getElementById("1st-page");
     var y = document.getElementById("2nd-page");
     if (y.style.display === "none") {
