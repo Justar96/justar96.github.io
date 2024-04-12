@@ -19,10 +19,10 @@ body {
 
 .button-box {
   width: 160px;
-  margin: 120px auto;
+  margin: 110px auto;
   position: relative;
   border-radius: 12px;
-  background: #333;
+  background: #4a4a4a;
   text-align: center;
   justify-content: center;
 }
