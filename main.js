@@ -4,36 +4,37 @@ const aboutContent = document.querySelector('#about-content')
 const contactContent = document.querySelector('#contact-content')
 
 var btn = document.getElementById('btn')
-var toggleBtn = document.getElementById('toggle-btn')
+var toggleButtonLeft = document.getElementById('toggle-btn-left')
+var toggleButtonRight = document.getElementById('toggle-btn-right')
+var x = document.getElementById("1st-page");
+var y = document.getElementById("2nd-page");
 
 function leftClick() {
     btn.style.left = '0';
-    // toggleBtn.style.color = '0';
-    var colorWhite = toggleBtn.style.color = '0'
-    var colorBlack = toggleBtn.style.color = '0'
-    var x = document.getElementById("1st-page");
-    var y = document.getElementById("2nd-page");
     if (x.style.display === "none") {
         x.style.display = "flex";
         y.style.display = "none"
+        toggleButtonLeft.style.color = '#f0f0f0'
+        toggleButtonRight.style.color = '#030303'
       } else {
         x.style.display = "flex";
         y.style.display = "none"
+        toggleButtonLeft.style.color = '#f0f0f0'
+        toggleButtonRight.style.color = '#030303'
       }
     }
 function rightClick() {
     btn.style.left = '50%'
-    // toggleBtn.style.color = '0';
-    var colorWhite = toggleBtn.style.color = '0'
-    var colorBlack = toggleBtn.style.color = '0'
-    var x = document.getElementById("1st-page");
-    var y = document.getElementById("2nd-page");
     if (y.style.display === "none") {
         y.style.display = "flex";
         x.style.display = "none";
+        toggleButtonLeft.style.color = '#030303'
+        toggleButtonRight.style.color = '#f0f0f0'
       } else {
         y.style.display = "flex";
         x.style.display = "none";
+        toggleButtonLeft.style.color = '#030303'
+        toggleButtonRight.style.color = '#f0f0f0'
       }
     }
 
