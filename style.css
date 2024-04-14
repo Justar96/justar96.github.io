@@ -41,6 +41,9 @@ body {
 #toggle-btn-left {
   color: #f0f0f0;
 }
+#toggle-btn-right {
+  color: #030303;
+}
 
 #btn {
   left: 0;
@@ -298,6 +301,8 @@ main {
   opacity: 1;
 }
 
+
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -307,3 +312,4 @@ main {
   user-select: none; /* Non-prefixed version, currently
     supported by Chrome, Edge, Opera and Firefox */
 }
+

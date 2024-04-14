@@ -65,19 +65,30 @@
         <main>
           <div id="todaysDate"></div>
           <h1 id="terminal">guest@begetar-terminal ~ % <span class="cursor_3">_</span></h1>
+          <template id="greetings">
+            _______  _______  ______    __   __  ___   __    _  _______  ___     
+           |       ||       ||    _ |  |  |_|  ||   | |  |  | ||   _   ||   |    
+           |_     _||    ___||   | ||  |       ||   | |   |_| ||  |_|  ||   |    
+             |   |  |   |___ |   |_||_ |       ||   | |       ||       ||   |    
+             |   |  |    ___||    __  ||       ||   | |  _    ||       ||   |___ 
+             |   |  |   |___ |   |  | || ||_|| ||   | | | |   ||   _   ||       |
+             |___|  |_______||___|  |_||_|   |_||___| |_|  |__||__| |__||_______|
+           </template>
         </main>
       </div>
     </div>
       <div class="button-box noselect">
         <div id="btn"></div>
         <button type="button" class="toggle-btn pageToggle" id="toggle-btn-left" onclick="leftClick()">
-           webpage
+          webpage
         </button>
         <button type="button" class="toggle-btn pageToggle" id="toggle-btn-right" onclick="rightClick()">
           terminal
         </button>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/gh/jcubic/jquery.terminal@devel/js/jquery.terminal.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/jcubic/jquery.terminal@devel/css/jquery.terminal.min.css" rel="stylesheet"/>
     <script src="winbox.bundle.js"></script>
     <script src="main.js"></script>
   </body>
