@@ -14,28 +14,26 @@ body {
   color: #ccc;
   font-size: 18px;
   line-height: 1;
-  justify-content: center;
+  text-align: center;
+  text-justify: auto;
 }
 
 .button-box {
-  width: 160px;
-  margin: 110px auto;
+  flex-direction: row;
+  width: 145px ;
+  margin: 100px auto;
   position: relative;
   border-radius: 12px;
   background: #4a4a4a;
-  text-align: center;
-  justify-content: center;
 }
 .toggle-btn {
   font-family: "Roboto Mono";
-  font-weight: 450;
-  padding: 4px;
+  padding: 1% 0% 2.0% 2.5%;
+  font-weight: 550;
   cursor: pointer;
   background: transparent;
   border: 0;
-  outline: none;
   position: relative;
-  margin-left: 4px;
 }
 
 #toggle-btn-left {
@@ -52,9 +50,11 @@ body {
   width: 50%;
   height: 100%;
   background: #00aa00;
+  text-shadow: 0 0 0.05em #00aa00;
   border-radius: 12px;
-  transition: 0.2s;
+  transition: 0.25s;
 }
+
 
 h1 {
   font-family: "Roboto Mono";
