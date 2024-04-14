@@ -101,15 +101,10 @@ h1:hover span:nth-child(2) {
 
 }
 
-.container:hover main h1 span.cursor {
-  position: relative;
-  content: '|'
-}
-
-.container:hover main h1 span:nth-child(4) {
+h1:hover span:nth-child(4) {
   display: none;
 }
-.container:hover main h1 span:nth-child(4)::after {
+h1:hover span:nth-child(5):after {
   content: ')';
 }
 
@@ -213,22 +208,12 @@ h5 {
 
 #new_win {
   font-family: "Roboto Mono";
-  font-weight: 200;
+  font-weight: 350;
   text-shadow: 0 0 0.1em #f0f0f0;
   color: #f0f0f0;
   font-size: 12px;
   letter-spacing: 0.1px;
   margin: 5px;
-}
-
-#todaysDate {
-  font-family: "Roboto Mono";
-  font-weight: 450;
-  text-shadow: 0 0 0.05em var(--text-color);
-  color: var(--text-color);
-  font-size: 16px;
-  letter-spacing: 0px;
-  margin-bottom: 5px;
 }
 
 ul {
@@ -441,40 +426,66 @@ main {
   /* Non-prefixed version, currently
     supported by Chrome, Edge, Opera and Firefox */
 }
-
-#terminal {
-  font-family: "Roboto Mono";
-  font-weight: 450;
+#todaysDate {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 350;
   text-shadow: none;
   color: var(--text-color);
-  font-size: 16px;
-
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+#terminal {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 350;
+  text-shadow: none;
+  color: var(--text-color);
+  font-size: 17px;
+  letter-spacing: 1px;
   margin-top: 5px;
 }
 
 #terminalTextInput {
-  width: 100px;
   background: transparent;
   font-weight: 350;
   border: none;
   color: var(--text-color);
-  font-size: 16px;
+  font-size: 17px;
+  letter-spacing: 1px;
   outline: none;
-  font-family: 'Roboto Mono';
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
   animation: typing 2.5s steps(42, end) forwards;
 }
 
 #terminalReslutsCont {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 250;
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 350;
   text-shadow: none;
   color: #f0f0f0;
-  font-size: 16px;
+  letter-spacing: 1px;
+  font-size: 17px;
 
 }
 
 #main-2ndpage {
   width: 800px;
+}
+
+#terminalText {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 350;
+  text-shadow: none;
+  color: #f0f0f0;
+  font-size: 17px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  letter-spacing: 1px;
+  
 }
 
 @keyframes typing {
@@ -488,13 +499,14 @@ main {
 }
 
 .userEnteredText {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-weight: 350;
   text-shadow: none;
   color: var(--text-color);
-  font-size: 16px;
-
+  font-size: 17px;
+  font-style: normal;
   margin-top: 4px;
+  letter-spacing: 1px;
   margin-bottom: 5.5px;
   padding: 0;
 

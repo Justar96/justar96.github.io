@@ -143,10 +143,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Add text to the results div
   var addTextToResults = function (textToAdd) {
-    document.getElementById('terminalReslutsCont').innerHTML += "<p>" + textToAdd + "</p>";
+    document.getElementById('terminalReslutsCont').innerHTML += "<p id='terminalText'>" + textToAdd + "</p>";
     scrollToBottomOfResults();
   }
-
+  
   // Getting the list of keywords for help & posting it to the screen
   var postHelpList = function () {
     // Array of all the help keywords
