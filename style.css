@@ -14,8 +14,7 @@ body {
   color: #ccc;
   font-size: 18px;
   line-height: 1;
-  text-align: center;
-  text-justify: auto;
+
 }
 
 .button-box {
@@ -25,10 +24,12 @@ body {
   position: relative;
   border-radius: 12px;
   background: #4a4a4a;
+  text-align: center;
+  text-justify: auto;
 }
 .toggle-btn {
   font-family: "Roboto Mono";
-  padding: 1% 0% 2.0% 2.5%;
+  padding: 0% 0% 2.0% 1.2%;
   font-weight: 550;
   cursor: pointer;
   background: transparent;
