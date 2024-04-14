@@ -6,13 +6,15 @@
 
 :root {
   --text-color: #00aa00;
+  --text-color-w: #f0f0f0;
+  --text-color-b: #030303;
 }
 
 body {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   background-color: #272727;
   color: #ccc;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1;
 
 }
@@ -43,12 +45,12 @@ body {
 
 #toggle-btn-left {
   color: #f0f0f0;
-  text-shadow: 0 0 0.1em #333333;
+  text-shadow: 0 0 0.05em #333333;
 }
 
 #toggle-btn-right {
   color: #030303;
-  text-shadow: 0 0 0.1em #333333;
+  text-shadow: 0 0 0.05em #333333;
 }
 
 #btn {
@@ -64,10 +66,11 @@ body {
 }
 
 h1 {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-weight: bold;
   text-shadow: none;
-  margin-top: -10px;
+  margin-top: -25px;
+  margin-bottom: 10px;
   color: var(--text-color);
   font-size: 56px;
   letter-spacing: -1px;
@@ -80,7 +83,6 @@ h1 span {
 
 h1:hover span:nth-child(1) {
   margin-right: 5px;
-  letter-spacing: 0.1px;
 }
 
 h1:hover span:nth-child(2)::before {
@@ -89,7 +91,6 @@ h1:hover span:nth-child(2)::before {
 
 h1:hover span:nth-child(2) {
   margin-left: 10px;
-  letter-spacing: 0.5px;
 }
 
 h1:hover span:nth-child(2):after {
@@ -113,31 +114,37 @@ h1:hover span:nth-child(5):after {
   content: ')';
 }
 
-/* @keyframes animate{
+#h3-1stpage {
+  color: #f0f0f0;
+  margin-bottom: 5px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  animation: animate 7s linear infinite;
+}
+@keyframes animate{
 
-  0%
+  0%,65%
   {
-    color: var(--text-color);
+    color: var(--text-color-w);
     text-shadow: none;
   }
-  35%,80%
+  25%,50%,80%
   {
-    color: var(--text-color);
-    text-shadow: 0 0 8px var(--text-color),
-    0 0 10px var(--text-color),
-    0 0 25px var(--text-color),
-    0 0 40px var(--text-color),
-    0 0 78px var(--text-color)
+    color: var(--text-color-w);
+    text-shadow: 0 0 1px var(--text-color-w),
+    0 0 1.5px var(--text-color-w),
+    0 0 2px var(--text-color-w),
+    0 0 4px var(--text-color-w);
   }
-  50%,100%
+  0%,35%
   {
-    color: var(--text-color);
+    color: var(--text-color-w);
     text-shadow: none;
   }
-} */
+}
 
 h2 {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-weight: 450;
   text-shadow: 0 0 0.1em #00aa00;
   color: var(--text-color);
@@ -149,26 +156,19 @@ h2 {
 }
 
 h3 {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   color: var(--text-color);
-}
-
-#h3-1stpage {
-  color: #f0f0f0;
-  margin-bottom: 5px;
-  font-family: "Roboto Mono";
-  font-weight: 400;
-  text-shadow: 0 0 0.1em #f0f0f0;
 }
 
 h5 {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-weight: 300;
-  text-shadow: 0 0 0.1em #00aa00;
+  text-shadow: 0 0 0.01em #00aa00;
   color: var(--text-color);
   font-size: 14px;
-  letter-spacing: 0.2px;
-  margin-bottom: 30px;
+  letter-spacing: 0.1px;
+  margin-top: 15px;
+  margin-bottom: 18px;
 }
 
 #about {
@@ -212,7 +212,7 @@ h5 {
 }
 
 #new_win {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-weight: 350;
   text-shadow: 0 0 0.1em #f0f0f0;
   color: #f0f0f0;
@@ -277,7 +277,7 @@ nav ul li {
   height: 65vh;
   justify-content: center;
   align-items: center;
-  animation: fadeInAnimation 0.25s ease-in-out 0s forwards;
+  animation: fadeInAnimation 0.3s ease-in-out 0s forwards;
 }
 
 .container-toggle {
@@ -287,11 +287,11 @@ nav ul li {
   height: 65vh;
   justify-content: left;
   align-items: left;
-  animation: fadeInAnimation 0.4s ease-in-out 0s forwards;
+  animation: fadeInAnimation 0.3s ease-in-out 0s forwards;
 }
 
 main {
-  width: 350px;
+  width: 400px;
   margin-top: 15px;
   margin-left: 15px;
   justify-content: center;
@@ -299,12 +299,10 @@ main {
 
 .hidden {
   display: none;
-
 }
 
 .container-toggle {
   display: none;
-
 }
 
 @-webkit-keyframes fadeInAnimation {
@@ -348,14 +346,14 @@ main {
 }
 
 .cursor {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   text-shadow: 0 0 0.05em #292929;
   font-weight: 700;
   animation: 1s blink step-end infinite;
 }
 
 .cursor_2 {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   text-shadow: 0 0 0.05em #333;
   font-weight: 700;
   animation: 1s blink step-end infinite;
@@ -369,18 +367,11 @@ main {
   animation: 1s blink-2 step-end infinite;
 }
 
-/* pre.caret-underscore > span {
-  animation: blink 1s step-end infinite;
-  border-bottom: 3px solid white;
-} */
-
 @keyframes blink {
-
   from,
   to {
     color: transparent;
   }
-
   50% {
     color: var(--text-color);
     text-shadow: 0 0 0.1em var(--text-color);
@@ -388,12 +379,10 @@ main {
 }
 
 @keyframes blink-2 {
-
   from,
   to {
     color: transparent;
   }
-
   50% {
     color: #292929;
     text-shadow: 0 0 0.1em #292929;
@@ -462,7 +451,7 @@ main {
   outline: none;
   font-family: "Roboto Mono", monospace;
   font-style: normal;
-  animation: typing 2.5s steps(42, end) forwards;
+  animation: typing 2.4s steps(32, end) forwards;
 }
 
 #terminalReslutsCont {
@@ -497,7 +486,6 @@ main {
   from {
     width: 0
   }
-
   to {
     width: 50%
   }
