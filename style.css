@@ -10,7 +10,7 @@
 
 body {
   font-family: "Roboto Mono";
-  background-color: #292929;
+  background-color: #272727;
   color: #ccc;
   font-size: 18px;
   line-height: 1;
@@ -20,7 +20,7 @@ body {
 .button-box {
   flex-direction: row;
   width: 145px;
-  margin: 100px auto;
+  margin: 80px auto;
   position: relative;
   border-radius: 12px;
   background: #4a4a4a;
@@ -29,21 +29,26 @@ body {
 }
 
 .toggle-btn {
-  font-family: "Roboto Mono";
-  padding: 0% 0.5% 2.5% 1.2%;
-  font-weight: 550;
+  font-family: "Roboto Mono", monospace;
+  padding: 0% 0.8% 2.5% 2.5%;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 14px;
   cursor: pointer;
   background: transparent;
   border: 0;
   position: relative;
+  letter-spacing: -1px;
 }
 
 #toggle-btn-left {
   color: #f0f0f0;
+  text-shadow: 0 0 0.1em #333333;
 }
 
 #toggle-btn-right {
   color: #030303;
+  text-shadow: 0 0 0.1em #333333;
 }
 
 #btn {
@@ -269,7 +274,7 @@ nav ul li {
   margin: auto;
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 65vh;
   justify-content: center;
   align-items: center;
   animation: fadeInAnimation 0.25s ease-in-out 0s forwards;
@@ -279,10 +284,10 @@ nav ul li {
   max-width: auto;
   display: flex;
   flex-direction: row;
-  height: 70vh;
+  height: 65vh;
   justify-content: left;
   align-items: left;
-  animation: fadeInAnimation 0.25s ease-in-out 0s forwards;
+  animation: fadeInAnimation 0.4s ease-in-out 0s forwards;
 }
 
 main {
@@ -432,28 +437,28 @@ main {
   font-weight: 350;
   text-shadow: none;
   color: var(--text-color);
-  font-size: 17px;
-  letter-spacing: 1px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
   margin-bottom: 5px;
 }
 #terminal {
   font-family: "Roboto Mono", monospace;
   font-style: normal;
-  font-weight: 350;
+  font-weight: 400;
   text-shadow: none;
   color: var(--text-color);
-  font-size: 17px;
-  letter-spacing: 1px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
   margin-top: 5px;
 }
 
 #terminalTextInput {
   background: transparent;
-  font-weight: 350;
+  font-weight: 400;
   border: none;
   color: var(--text-color);
-  font-size: 17px;
-  letter-spacing: 1px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
   outline: none;
   font-family: "Roboto Mono", monospace;
   font-style: normal;
@@ -463,11 +468,11 @@ main {
 #terminalReslutsCont {
   font-family: "Roboto Mono", monospace;
   font-style: normal;
-  font-weight: 350;
+  font-weight: 400;
   text-shadow: none;
   color: #f0f0f0;
-  letter-spacing: 1px;
-  font-size: 17px;
+  letter-spacing: 0.5px;
+  font-size: 16px;
 
 }
 
@@ -478,13 +483,13 @@ main {
 #terminalText {
   font-family: "Roboto Mono", monospace;
   font-style: normal;
-  font-weight: 350;
+  font-weight: 400;
   text-shadow: none;
   color: #f0f0f0;
-  font-size: 17px;
+  font-size: 16px;
   margin-top: 2px;
   margin-bottom: 2px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   
 }
 
@@ -500,13 +505,13 @@ main {
 
 .userEnteredText {
   font-family: "Roboto Mono", monospace;
-  font-weight: 350;
+  font-weight: 400;
   text-shadow: none;
   color: var(--text-color);
-  font-size: 17px;
+  font-size: 16px;
   font-style: normal;
   margin-top: 4px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   margin-bottom: 5.5px;
   padding: 0;
 
