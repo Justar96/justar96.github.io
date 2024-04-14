@@ -200,21 +200,21 @@ document.addEventListener('DOMContentLoaded', function () {
       case "github":
         clearInput();
         removePlaceholder();
-        addTextToResults("https://github.com/Justar96");
+        addTextToResults("<i>The URL " + "<b>" + 'https://github.com/Justar96' + "</b>" + " should be opened now.</i>");
         openLinkInNewWindow('https://github.com/Justar96');
         break;
 
       case "leetcode":
         clearInput();
         removePlaceholder();
-        addTextToResults("https://leetcode.com/justar1996/");
+        addTextToResults("<i>The URL " + "<b>" + 'https://leetcode.com/justar1996/' + "</b>" + " should be opened now.</i>");
         openLinkInNewWindow('https://leetcode.com/justar1996/');
         break;
 
       case "linkdin":
         clearInput();
         removePlaceholder();
-        addTextToResults('https://www.linkedin.com/?trk=seo-authwall-base_nav-header-logo');
+        addTextToResults("<i>The URL " + "<b>" + 'https://www.linkedin.com/?trk=seo-authwall-base_nav-header-logo' + "</b>" + " should be opened now.</i>");
         openLinkInNewWindow('https://www.linkedin.com/?trk=seo-authwall-base_nav-header-logo');
         break;
 
@@ -258,7 +258,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (textInputValue != "") { //checking if text was entered
       addTextToResults("<p class='userEnteredText'>guest@begetar-terminal ~ % " + textInputValue + "</p>");
       if (textInputValueLowerCase.substr(0, 5) == "open ") { //if the first 5 characters = open + space
-        
         addTextToResults("<i>The URL " + "<b>" + textInputValue.substr(5) + "</b>" + " should be opened now.</i>");
       } else {
         textReplies();
