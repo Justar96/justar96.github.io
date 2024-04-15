@@ -78,7 +78,7 @@ h1 {
 }
 
 h1 span {
-  transition: 0.8s;
+  transition: 0.75s;
 }
 
 h1:hover span:nth-child(1) {
@@ -291,7 +291,7 @@ nav ul li {
 }
 
 main {
-  width: 400px;
+  width: 275px;
   margin-top: 15px;
   margin-left: 15px;
   justify-content: center;
@@ -345,7 +345,7 @@ main {
   }
 }
 
-.cursor {
+#cursor {
   font-family: "Roboto Mono", monospace;
   text-shadow: 0 0 0.05em #292929;
   font-weight: 700;
