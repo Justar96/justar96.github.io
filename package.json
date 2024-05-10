@@ -1,0 +1,28 @@
+{
+  "name": "rabbyte-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview --port 8080"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "ldrs": "^1.0.1",
+    "pm2": "^5.3.1",
+    "process": "^0.11.10",
+    "require": "^0.4.4",
+    "start": "^5.1.0"
+  },
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
